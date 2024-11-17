@@ -259,8 +259,7 @@ def samtheadmin(username, password, domain, options):
 
     exploit(dcfull, adminticket, options)
 
-
-if __name__ == '__main__':
+def main():
     print(banner())
 
     parser = argparse.ArgumentParser(add_help=True, description="SAM THE ADMIN CVE-2021-42278 + CVE-2021-42287 chain")
@@ -403,3 +402,7 @@ if __name__ == '__main__':
             traceback.print_exc()
         logging.error(e)
 
+
+
+if __name__ == '__main__':
+    main()

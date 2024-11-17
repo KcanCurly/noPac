@@ -91,7 +91,7 @@ def vulscan(username, password, domain, options):
         else:
             logging.error(f"Can't get DC ip from dns..")
 
-if __name__ == '__main__':
+def main():
     print(banner())
 
     parser = argparse.ArgumentParser(add_help = True, description = "SAM THE ADMIN CVE-2021-42278 + CVE-2021-42287 chain")
@@ -162,3 +162,7 @@ if __name__ == '__main__':
             import traceback
             traceback.print_exc()
         logging.error(e)
+
+
+if __name__ == '__main__':
+    main()
