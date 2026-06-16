@@ -11,7 +11,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "impacket==0.9.24",
-        "setuptools"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
